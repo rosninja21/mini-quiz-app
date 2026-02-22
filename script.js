@@ -8,7 +8,7 @@ let startBtn=document.querySelector("#start-button");
 let footerP=document.querySelector("footer"); //this one here is selecting a class, u can tell it cause it has nothing like a # or .
 
 
-// these datas are stored in objects to create questions  
+// these datas are stored in objects use in creating questions togther with its corresponding correct answers
 const questions= [
   {
     text: "Which method is used to display a message in a browser popup in JavaScript?",
@@ -230,3 +230,4 @@ function showResult(isCorrect){
   
 
 // }
+
