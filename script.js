@@ -69,22 +69,29 @@ let currentQuestionIndex= 0;
 
 
 
-// this will drive to the questions as long as it is triggered
+// this will lead you to the first question as long as it is triggered
 startBtn.addEventListener("click", function () {
+
+  // this is clears the innerHTML before loading the questions
   questionContainer.innerHTML = "";
   optionsContainer.innerHTML = "";
-
+  
+// then  this function will display the question and its options
   LoadQuestion();
+
+  // these will remove start button and other contents like the footer
     startBtn.style.display="none";
     footerP.style.display="none";
 
 });
 
-
+// this function is made to handle the bigger task and will be called inside the start button event listener.
 function LoadQuestion() {
+  // clears html
   questionContainer.innerHTML="";
   optionsContainer.innerHTML="";
 
+  
   const currentQuestion=questions[currentQuestionIndex];
   
   const questionDiv=document.createElement("div");
@@ -171,4 +178,5 @@ function showResult(isCorrect){
 }
 
 }
+
 
