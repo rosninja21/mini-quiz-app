@@ -1,0 +1,25 @@
+let questionContainer = document.querySelector("#question-container");
+let optionsContainer = document.querySelector("#options-container");
+let nextBtn = document.querySelector("#next-button");
+
+function LoadQuestion() {
+  let questions = document.createElement("div");
+  questions.textContent = "Question 1: What is the capital of France?";
+  questionContainer.appendChild(questions);
+
+  let options = ["A.Berlin", "B.Madrid", "C.Paris", "D.Rome"];
+
+  for (let i = 0; i < options.length; i++) {
+    let option = document.createElement("div");
+    option.textContent = options[i];
+    optionsContainer.appendChild(option);
+  }
+
+}
+
+
+nextBtn.addEventListener("click", function () {
+    LoadQuestion();
+   
+});
+
