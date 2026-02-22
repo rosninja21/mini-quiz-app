@@ -1,11 +1,14 @@
-let questionContainer = document.querySelector("#question-container");
+// I'll explain briefly what I did here as much as I can
+
+// Declared and stored all the necessary elements from the HTML code to be manipulated here in JS
+let questionContainer = document.querySelector("#question-container"); //this line to 7 is selecting an element by id using query selector (a general selector)
 let optionsContainer = document.querySelector("#options-container");
 let nextBtn = document.querySelector("#next-button");
 let startBtn=document.querySelector("#start-button");
-let footerP=document.querySelector("footer");
+let footerP=document.querySelector("footer"); //this one here is selecting a class, u can tell it cause it has nothing like a # or .
 
 
-
+// these datas are stored in objects to create questions  
 const questions= [
   {
     text: "Which method is used to display a message in a browser popup in JavaScript?",
@@ -225,4 +228,5 @@ function showResult(isCorrect){
 
   
   
+
 // }
