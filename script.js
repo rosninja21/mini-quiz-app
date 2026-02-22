@@ -63,12 +63,13 @@ const questions= [
   }
 ]; 
 
+// para ni nga makuha kung unsay current nga index sa question gamiton ni to display the question number para di na mano2 nga magbutang ug 1-100  nga mga numbers if taman 100 ang questions
 let currentQuestionIndex= 0;
 
 
 
 
-
+// this will drive to the questions as long as it is triggered
 startBtn.addEventListener("click", function () {
   questionContainer.innerHTML = "";
   optionsContainer.innerHTML = "";
@@ -230,4 +231,5 @@ function showResult(isCorrect){
   
 
 // }
+
 
