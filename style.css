@@ -28,6 +28,8 @@ h1 {
 #start-button{
   display: block;
   margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 button {
@@ -84,10 +86,24 @@ button:hover {
 footer {
   text-align: center;
   color: white;
-  margin-top: 10px;
   font-size: 14px;
+  margin-top: 15px; /* small space above footer */
 }
 #footer-p{
   margin-top: 20px;
   color: yellowgreen;
+}
+
+.score-div {
+  display: block; 
+  width: fit-content;   
+  margin: 20px auto;     /* Makes div shrink to fit content */
+  border: 5px solid #4caf50;     /* White border */
+  border-radius: 8px;         /* Rounded corners */
+  padding: 8px 12px;          /* Small padding, enough for text */
+  font-size: 1.2rem;          /* Adjust to your score size */
+  background-color: #4caf50; /* Optional slight background */
+  color: #fff;                /* Score text color */
+  min-width: 40px;            /* Prevents too tiny div for single-digit scores */
+  text-align: center;         /* Centers the score */
 }
